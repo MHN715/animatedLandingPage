@@ -25,23 +25,23 @@ document.addEventListener('DOMContentLoaded', function(){
           });
     }
 
-    function backgroundAnim(elm, scale){
+    function backgroundAnim(elm, scale, x, y){
         anime({
             targets: elm,
-            translateX: 100,
-            translateY: - 70,
+            translateX: x,
+            translateY: y,
             scale: 3,
-            direction: 'alternate',
+            direction: 'reverse',
             easing: 'easeInOutQuad',
-            duration: 750,
-            loop: true,
+            duration: 5050,
+            // loop: true,
           });
     }
 
-    backgroundAnim(backgroundBack, 1.9);
-    backgroundAnim(backgroundFront, 1.9);
+    backgroundAnim(backgroundBack, 1.9, 500, 0);
+    backgroundAnim(backgroundFront, 1.9, 0, -70);
 
-    contentAnim(h1, 8500, -100, 0, 1, 0, 'reverse');
+    contentAnim(h1, 7000, -100, 0, 1, 0, 'reverse');
     contentAnim(headerContent, 3000, -100, 0, 1, 0, 'reverse');
     contentAnim(links, 2000, -100, 0, 1, 0, 'reverse');
     contentAnim(InYaFaceText,5000, 100, 0, 1, 0, 'reverse');
