@@ -1,11 +1,12 @@
 @import 'base';
 
-// partial modules
-@import 'partialModules/header';
-
 // index modules
 @import 'indexModules/animated-background';
 @import 'indexModules/index-layout.scss';
+
+// partial modules
+@import 'partialModules/header';
+
 
 // footer modules
 @import 'partialModules/footer.scss';

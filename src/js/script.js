@@ -24,13 +24,11 @@ document.addEventListener('DOMContentLoaded', function(){
             opacity: opacityValue,
             delay: anime.stagger(400, {direction: 'reverse'}),
             duration: duration,
-            endDelay: 2000,
+            endDelay: 1000,
           });
     }
 
-    contentAnim(backgroundBack, 5000, -200, 100, 2, 1, 'reverse');
-    contentAnim(backgroundFront, 5000, 250, 220, 2, 1, 'reverse');
-
+    
     contentAnim(h1, 5500, 0, -100, 1, 0, 'reverse');
     contentAnim(headerContent, 3000, 0, -100, 1, 0, 'reverse');
     contentAnim(links, 2000, 0, -100, 1, 0, 'reverse');
@@ -42,5 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
     contentAnim(footerSoMeLinks, 3500, -10, 100, 1, 0, 'reverse');
     contentAnim(footerInfoBox2MapPin, 3500, 300, 0, 1, 0, 'reverse')
     
+    contentAnim(backgroundBack, 5000, -200, 100, 2, 1, 'reverse');
+    contentAnim(backgroundFront, 5000, 250, 220, 2, 1, 'reverse');
 });
 
