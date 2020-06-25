@@ -14,6 +14,16 @@ function js(){
     .pipe(connect.reload())
 }
 
+function buildJS(){
+    return gulp.src('src/js/**/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('dist/assets/js'));
+}
+
 function watchJS(){
     return gulp
     .watch('src/js/**/*.js',{
@@ -22,5 +32,6 @@ function watchJS(){
 }
 
 module.exports = {
-    watchJS
+    watchJS,
+    buildJS
 }

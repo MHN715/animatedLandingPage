@@ -14,6 +14,15 @@ function scss(){
         .pipe(connect.reload());
 }
 
+function buildSCSS(){
+    return gulp
+        .src('./src/scss/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compact'}))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('dist/assets/css'));
+}
+
 function watchSCSS(){
     return gulp
         .watch('./src/scss/**/*.scss', {
@@ -22,5 +31,6 @@ function watchSCSS(){
 }
 
 module.exports = {
-    watchSCSS
+    watchSCSS,
+    buildSCSS
 }
