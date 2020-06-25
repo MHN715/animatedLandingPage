@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
             opacity: opacityValue,
             delay: anime.stagger(400, {direction: 'reverse'}),
             duration: duration,
-            endDelay: 1000,
+            // endDelay: 1000,
           });
     }
 
