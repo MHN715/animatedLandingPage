@@ -24,8 +24,8 @@
                 color: white;
                 height: 2rem;
                 position: relative;
-                left: -13.04rem;
-                top: 0.55rem;
+                left: -11.53rem;
+                top: 0.53rem;
                 display: flex;
                 align-items: center;
                 background: #0A0A0F;
@@ -72,9 +72,13 @@
             border-radius: 50px;
             position: relative;
             font-size: 1rem;
-            padding-bottom: .15rem;
             cursor: pointer;
             // transition: 500ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
 
         }
         &__btn:hover{
@@ -127,15 +131,16 @@
                 width: 8.2rem;
                 justify-self: end;
     
-                a{
+                &-links{
                     color: white;
-                    border: 1px solid white;
+                    border: 1px solid rgb(143, 143, 143);
                     border-radius: 100px;
                     height: 2rem;
                     width: 2rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    text-decoration: none;
                 }
             }
             
@@ -157,6 +162,13 @@
                 position: relative;
                 height: 100%;
                 right: 6.6rem;
+            }
+
+            &-pin-point{
+                height: 1rem;
+                position: relative;
+                left: 3.6rem;
+                bottom: .4rem;
             }
             
         }
